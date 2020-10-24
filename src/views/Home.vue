@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
+    <img alt="Vue logo" src="../assets/kipos-logo.svg" />
     {{ $t("hello") }}
     <HelloWorld msg="Salut" />
   </div>

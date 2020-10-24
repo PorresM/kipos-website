@@ -7,17 +7,12 @@ enum Locales {
     FR = 'fr',
 }
 
-// const LOCALES = [
-//   { value: Locales.EN, caption: 'English' },
-//   { value: Locales.FR, caption: 'Français' }
-// ]
-
 const messages = {
     [Locales.EN]: en,
     [Locales.FR]: fr
 };
 
-const defaultLocale = Locales.EN;
+const defaultLocale = Locales.FR;
 
 const i18n = createI18n({
     legacy: false,

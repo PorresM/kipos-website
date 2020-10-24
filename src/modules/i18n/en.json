@@ -1,5 +1,13 @@
 {
     "hello": "Hello !",
+    "baseline": "Master your very own portfolio",
+    "form": {
+        "login": {
+            "email": "Email",
+            "password": "Password",
+            "submit": "Log in"
+        }
+    },
     "error": {
         "login": "Invalid email or password",
         "unknown": "Unknown error"

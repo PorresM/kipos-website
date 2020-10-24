@@ -1,0 +1,62 @@
+@import "variables";
+
+body {
+  font-family: $font-main, sans-serif;
+  color: $color-font-main;
+  background-color: $color-background-main;
+  margin: 0;
+
+  #app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  footer {
+    margin-top: auto;
+  }
+}
+
+input {
+  font-family: $font-main, sans-serif;
+  border: solid 1px $kipos-blue;
+  border-radius: 30px;
+  padding: 10px 20px;
+  background: none;
+
+
+}
+
+input::placeholder {
+  font-style: italic;
+}
+
+input:focus {
+  background: white;
+  border-color: $kipos-light-blue;
+  outline: none;
+  -webkit-box-shadow: 0px 0px 5px 2px $kipos-green;
+  -moz-box-shadow: 0px 0px 5px 2px $kipos-green;
+  box-shadow: 0px 0px 5px 2px $kipos-green;
+}
+
+button {
+  font-family: $font-main, sans-serif;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 40px;
+  color: white;
+  background-image: $color-gradient-main;
+}
+
+button:focus {
+  outline: none;
+}
+
+.form-group {
+  margin: 20px;
+}
+
+.center {
+  text-align: center;
+}
