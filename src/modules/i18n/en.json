@@ -1,0 +1,7 @@
+{
+    "hello": "Hello !",
+    "error": {
+        "login": "Invalid email or password",
+        "unknown": "Unknown error"
+    }
+}
