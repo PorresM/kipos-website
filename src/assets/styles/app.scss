@@ -23,8 +23,6 @@ input {
   border-radius: 30px;
   padding: 10px 20px;
   background: none;
-
-
 }
 
 input::placeholder {
@@ -53,10 +51,55 @@ button:focus {
   outline: none;
 }
 
+select {
+  font-family: $font-main, sans-serif;
+  border: solid 1px $kipos-blue;
+  border-radius: 30px;
+  padding: 10px 20px;
+  background: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  option {
+    font-family: $font-main, sans-serif;
+    border: solid 1px $kipos-blue;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: white;
+  }
+}
+
+select:focus {
+  background: white;
+  border-color: $kipos-light-blue;
+  outline: none;
+  -webkit-box-shadow: 0px 0px 5px 2px $kipos-green;
+  -moz-box-shadow: 0px 0px 5px 2px $kipos-green;
+  box-shadow: 0px 0px 5px 2px $kipos-green;
+}
+
 .form-group {
   margin: 20px;
 }
 
 .center {
   text-align: center;
+}
+
+
+.search_bar>div:before, .search_bar>div:after {
+  background: #000000;
+  content: '';
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: calc(50% - 1px);
+  width: 8px;
+  -webkit-transition: transform 0.25s;
+  -ms-transition: transform 0.25s;
+  -o-transition: transform 0.25s;
+  transition: transform 0.25s;
 }

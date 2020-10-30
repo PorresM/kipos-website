@@ -15,6 +15,7 @@ const AuthService = {
                 router.push({
                     name: "Home"
                 });
+                EventBus.emit("success", "success.login");
             })
             .catch(response => {
                 if (response.response.status == 401) {
@@ -23,6 +24,30 @@ const AuthService = {
                     EventBus.emit("error", "error.unknown");
                 }
             });
+    },
+    signup(email: string, password: string) {
+        axiosInstance
+            .post("/api/auth/register", {
+                email: email,
+                password: password
+            })
+            .then(response => {
+                router.push({
+                    name: "Login"
+                });
+                EventBus.emit("success", "success.signup");
+            })
+            .catch(response => {
+                if (response.response.status == 400) {
+                    EventBus.emit("error", "error.signup");
+                } else if (response.response.status == 415) {
+                    EventBus.emit("error", "error.validation");
+                }
+
+                else {
+                    EventBus.emit("error", "error.unknown");
+                }
+            })
     }
 };
 

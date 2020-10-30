@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import Home from "../views/Home.vue";
 import Login from "@/components/auth/Login.vue";
+import Signup from "@/components/auth/Signup.vue";
 import Logout from "@/components/auth/Logout.vue";
 import MainLayout from "@/components/layouts/MainLayout.vue";
 import LoginLayout from "@/components/layouts/LoginLayout.vue";
@@ -36,6 +37,12 @@ const routes: Array<RouteRecordRaw> = [
         path: "/login",
         name: "Login",
         component: Login,
+        meta: { requiresAuth: false }
+      },
+      {
+        path: "/signup",
+        name: "Create an Account",
+        component: Signup,
         meta: { requiresAuth: false }
       },
       {

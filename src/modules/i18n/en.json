@@ -6,10 +6,23 @@
             "email": "Email",
             "password": "Password",
             "submit": "Log in"
+        },
+        "signup": {
+            "email": "Email",
+            "password": "Password",
+            "confirmPassword": "Confirm password",
+            "submit": "Sign up"
         }
     },
     "error": {
         "login": "Invalid email or password",
+        "signup": "Email already exist",
+        "validation": "Password should contain ...",
+        "confirmPassword": "Passwords don't match",
         "unknown": "Unknown error"
+    },
+    "success": {
+        "login": "Successfully logged in!",
+        "signup": "Successfully signed up!"
     }
 }

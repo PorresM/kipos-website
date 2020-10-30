@@ -6,10 +6,23 @@
       "email": "Email",
       "password": "Mot de passe",
       "submit": "Se connecter"
+    },
+    "signup": {
+      "email": "Email",
+      "password": "Mot de passe",
+      "confirmPassword": "Confirmation",
+      "submit": "S'enregistrer"
     }
   },
   "error": {
     "login": "Email ou mot de passe invalide",
+    "signup": "Email déjà existant",
+    "validation": "Le mot passe doit contenir ...",
+    "confirmPassword": "Mots de passe différents",
     "unknown": "Erreur inconnue"
+  },
+  "success": {
+    "login": "Connexion avec succès !",
+    "signup": "Inscription avec succès !"
   }
 }

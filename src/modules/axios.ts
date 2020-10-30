@@ -22,7 +22,7 @@ axiosInstance.interceptors.request.use(
 
 // Add a response interceptor to handle response
 axiosInstance.interceptors.response.use((response: any) => response, (error: { response: { status: number; }; }) => {
-    if (error.response.status === 403 || (error.response.status === 401)) {
+    if (error.response.status === 401) {
         localStorage.removeItem('token');
         localStorage.removeItem('user');
         router.push('/login');

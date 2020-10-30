@@ -1,4 +1,5 @@
 <template>
+  <Menu />
   <RouterView id="main-container" />
   <Alert />
   <Footer />
@@ -7,10 +8,11 @@
 <script>
 import Footer from "@/components/common/Footer";
 import Alert from "@/components/common/Alert";
+import Menu from "@/components/common/Menu";
 
 export default {
   name: "MainLayout",
-  components: { Footer, Alert }
+  components: { Menu, Footer, Alert }
 };
 </script>
 
